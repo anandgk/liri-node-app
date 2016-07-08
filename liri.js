@@ -70,7 +70,7 @@ function getSpotify(trackName) {
 }
 
 // -- Function to read from file -- //
-function  defaultFromFile() {
+function  getDefaultFromFile() {
 
   // Read file
   fs.readFile("random.txt", "utf8", function(error, data) {
@@ -114,7 +114,7 @@ switch(argValue[0]) {
     break;
 
   case 'do-what-it-says':
-    defaultFromFile();
+    getDefaultFromFile();
     break;
 
 }
